@@ -16,11 +16,11 @@ o	Column names (Year, Gold, Silver, Bronze, region, etc.)<br>
 o	Types of queries supported (sum, mean, top, count, etc.)<br>
 o	Expected structured output format<br>
 The AI converts the question into a structured query dictionary, which clearly specifies:<br>
-    o	operation → e.g., top, sum, mean<br>
-    o	columns → which columns to work on (Gold, Total)<br>
-    o	filter → any conditions like year, country, or gender<br>
-    o	group_by → field to group results (e.g., region)<br>
-    o	nth_place → if a specific ranking is requested<br>
+    1.	operation → e.g., top, sum, mean<br>
+    2.	columns → which columns to work on (Gold, Total)<br>
+    3.	filter → any conditions like year, country, or gender<br>
+    4.	group_by → field to group results (e.g., region)<br>
+    5.	nth_place → if a specific ranking is requested<br>
 •	Example structured query for the previous question:<br>
 •	{<br>
 •	  "operation": "top",<br>
