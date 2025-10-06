@@ -12,7 +12,12 @@ Link:- https://drive.google.com/file/d/1gbVxvEoeFVJG7fIsH01-noqIn80oCym8/view?us
 2. Place the dataset `athlete_events.csv` in this folder.<br><br>
 3. Run the main file:<br>
    python test.py<br><br>
-4. `test.py` demonstrates usage of the DataAgent class and sample queries.<br><br>
+4. `test.py` demonstrates usage of the DataAgent class and sample queries.<br>
+5. Run the Streamlit UI:<br>
+   streamlit run app.py<br>
+   Opens a basic interactive UI in your browser:<br><br>
+
+   
 
 ## Notes<br>
 - Make sure your Gemini API key is set as an environment variable:
