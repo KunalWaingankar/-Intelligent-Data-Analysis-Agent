@@ -15,12 +15,12 @@ Step 2: Question Interpretation<br>
 o	Column names (Year, Gold, Silver, Bronze, region, etc.)<br>
 o	Types of queries supported (sum, mean, top, count, etc.)<br>
 o	Expected structured output format<br>
-•	The AI converts the question into a structured query dictionary, which clearly specifies:<br>
-o	operation → e.g., top, sum, mean<br>
-o	columns → which columns to work on (Gold, Total)<br>
-o	filter → any conditions like year, country, or gender<br>
-o	group_by → field to group results (e.g., region)<br>
-o	nth_place → if a specific ranking is requested<br>
+The AI converts the question into a structured query dictionary, which clearly specifies:<br>
+    o	operation → e.g., top, sum, mean<br>
+    o	columns → which columns to work on (Gold, Total)<br>
+    o	filter → any conditions like year, country, or gender<br>
+    o	group_by → field to group results (e.g., region)<br>
+    o	nth_place → if a specific ranking is requested<br>
 •	Example structured query for the previous question:<br>
 •	{<br>
 •	  "operation": "top",<br>
@@ -31,14 +31,14 @@ o	nth_place → if a specific ranking is requested<br>
 •	}<br>
 •	This step ensures that even complex questions are converted into a machine-understandable format.<br><br>
 Step 3: Query Execution<br>
-•	The structured query is passed to the execution module.
-•	Using pandas, the following steps are performed:
-o	Apply filters to the dataset based on Year, region, gender, etc.
-o	Group data if group_by is specified.
-o	Perform the operation (sum, mean, top, count) on the specified columns.
-o	Handle ranking operations like top N or nth_place.
-•	The output is ready to be displayed.
-Step 4: Logging
-•	Every interaction is logged for tracking purposes.
-•	Logs include the question, structured query, and the final answer.
-•	This helps in debugging, improving prompts, and monitoring usage.
+•	The structured query is passed to the execution module.<br>
+•	Using pandas, the following steps are performed:<br>
+o	Apply filters to the dataset based on Year, region, gender, etc.<br>
+o	Group data if group_by is specified.<br>
+o	Perform the operation (sum, mean, top, count) on the specified columns.<br>
+o	Handle ranking operations like top N or nth_place.<br>
+•	The output is ready to be displayed.<br><br>
+Step 4: Logging<br>
+•	Every interaction is logged for tracking purposes.<br>
+•	Logs include the question, structured query, and the final answer.<br>
+•	This helps in debugging, improving prompts, and monitoring usage.<br>
