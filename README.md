@@ -4,6 +4,20 @@ The project is an Intelligent Data Analysis Agent that answers natural language 
 Download athlete and event CSV file from here:<br>
 Link:- https://drive.google.com/file/d/1gbVxvEoeFVJG7fIsH01-noqIn80oCym8/view?usp=sharing
 
+# Olympics DataAgent Project<br><br>
+
+## How to Run<br>
+1. Install dependencies:<br>
+   pip install -r requirements.txt<br><br>
+2. Place the dataset `athlete_events.csv` in this folder.<br><br>
+3. Run the main file:<br>
+   python test.py<br><br>
+4. `test.py` demonstrates usage of the DataAgent class and sample queries.<br><br>
+
+## Notes<br>
+- Make sure your Gemini API key is set as an environment variable:
+  export GEMINI_API_KEY="your_key_here"<br><br>
+
 The system works in a step-by-step pipeline:<br>
 Step 1: Data Preparation<br>
 •	The dataset is first preprocessed to ensure consistency.<br>
