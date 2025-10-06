@@ -2,11 +2,11 @@
 The project is an Intelligent Data Analysis Agent that answers natural language questions about Olympic data. It works with a cleaned dataset containing information on athletes, countries, events, medals, and more. The goal is to allow users to ask questions in plain English and get precise answers without needing to write code or SQL queries.
 
 The system works in a step-by-step pipeline:
-Step 1: Data Preparation
-•	The dataset is first preprocessed to ensure consistency.
-•	Any missing or redundant information is removed.
-•	A “Total” column is added to sum up Gold, Silver, and Bronze medals for each entry.
-•	This ensures all numerical calculations can be performed easily.
+Step 1: Data Preparation<br>
+•	The dataset is first preprocessed to ensure consistency.<br>
+•	Any missing or redundant information is removed.<br>
+•	A “Total” column is added to sum up Gold, Silver, and Bronze medals for each entry.<br>
+•	This ensures all numerical calculations can be performed easily.<br>
 Step 2: Question Interpretation
 •	The user inputs a question in plain English, like:
 “Which country got the 6th highest Gold medal count in 2016?”
