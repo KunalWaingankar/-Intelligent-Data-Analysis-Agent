@@ -14,7 +14,7 @@ Link:- https://drive.google.com/file/d/1gbVxvEoeFVJG7fIsH01-noqIn80oCym8/view?us
    python test.py<br><br>
 4. `test.py` demonstrates usage of the DataAgent class and sample queries.<br><br>
 5. Run the Streamlit UI:<br>
-   streamlit run app.py<br>
+   python -m streamlit run app.py<br>
    Opens a basic interactive UI in your browser:<br><br>
 
    
