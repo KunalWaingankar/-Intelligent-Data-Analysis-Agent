@@ -24,10 +24,11 @@ if st.button("Ask"):
     if question.strip() == "":
         st.warning("Please enter a question!")
     else:
-        with st.spinner("Thinking... 🤔"):
+        with st.spinner("Thinking..."):
             answer = agent.ask(question)
         st.success("Answer:")
         if isinstance(answer, dict):
             st.json(answer)
         else:
             st.json({str(answer)})
+
